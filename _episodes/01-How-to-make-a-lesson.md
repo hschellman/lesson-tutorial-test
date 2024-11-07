@@ -74,6 +74,33 @@ Then throw your individual modules into `_episodes` with leading numbers to set 
 
 There are very nice examples and a formatting tutorial at: [https://carpentries.github.io/lesson-example/](https://carpentries.github.io/lesson-example/)
 
+All lessons need to have a header that describes them
+
+~~~
+---
+title: How to make a Lesson for DUNE
+teaching: 30
+exercises: 0
+questions:
+- How can I make a lesson like this from scratch using the DUNE template
+objectives:
+- Learn how to set up locally to build a lesson and to deploy it.
+keypoints:
+- If you can do basic markdown, you can do this. 
+
+
+... body of the lesson ...
+
+~~~
+
+{: .source}
+
+In particular, check out 
+
+- [Organization](https://carpentries.github.io/lesson-example/03-organization/index.html)
+- [Formatting](https://carpentries.github.io/lesson-example/04-formatting/index.html)
+- [Style Guide](https://carpentries.github.io/lesson-example/06-style-guide/index.html)
+
 You can throw supplemental stuff into `_extras`.
 
 ## You can then build your site locally either as a server or just a local site.
@@ -107,10 +134,10 @@ make serve
 
 will launch a web server and a site at: `http://127.0.0.1:4000`  
 
-You need to reload the web site to see your changes. 
+You may need to reload the web site to see your changes. 
 
 > ### Note: 
-These will hang around until you kill them so if you try to launch twice so look for processes with:
+> These will hang around until you kill them so if you try to launch twice you can't. Look for processes with:
 {: .callout}
 
 
@@ -118,3 +145,51 @@ These will hang around until you kill them so if you try to launch twice so look
 ps -ef | grep jekyll
 ~~~
 {: .language-bash}
+
+### Publishing your draft site to `<yourname>.github.io/<yoursite>`
+
+Ok, so now you should be able to push your site to github.io
+
+We have provided a `gitadd.sh` script that adds the most common **source** files so you don't mistakenly publish all of the html you just generated.
+
+~~~
+# make certain you're up to date with the main repo
+git pull
+# make certain you are in your gh-pages branch
+source gitadd.sh
+git commit -m " I DID SOMETHING"
+git push
+~~~
+{: .language-bash}
+
+Wait a couple of minutes and you shouild see your page appear at:
+
+`https://<yourname>.github.io/<yoursite>`
+
+
+Ok, once you have your site in decent shape you can import it back to
+
+`https://github.com/DUNE/<yoursite>`
+
+### Making it official
+
+Once you have it checked out you can use the import function to make an official dune site.
+
+- Use the [GitHub’s importer](https://github.com/new/import) to make a copy of this repo in your own GitHub account. (Note: This is like a GitHub Fork, but not connected to the upstream changes)
+
+- Put the URL of this repository, that is `https://github.com/<yourname/<yoursite>.git` in the “Your old repository’s clone URL” box. 
+
+- Select the owner for your new repository `DUNE`
+
+- Set the name you chose for your lesson repository `<yoursite>`
+
+- Make sure the repository is public.
+
+### Maintaining your site
+
+- try to make changes on your local copy - others can also do things in their local copies
+
+- use pull requests to merge changes into the official DUNE site where possible
+
+- you can make minor patches directly on the main site but generally, it's better to work locally. 
+
