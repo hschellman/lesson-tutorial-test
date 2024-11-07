@@ -46,23 +46,23 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/swcarpentry/FIXME>,
-    which can be viewed at <https://swcarpentry.github.io/FIXME>.
+    please work in <https://github.com/dune/FIXME>,
+    which can be viewed at <https://dune.github.io/FIXME>.
 
-2.  If you wish to change the example lesson,
+2.  If you wish to change the Carpentries example lesson,
     please work in <https://github.com/carpentries/lesson-example>,
     which documents the format of our lessons
     and can be viewed at <https://carpentries.github.io/lesson-example>.
 
-3.  If you wish to change the template used for workshop websites,
+3.  If you wish to change the template used for Carpentries workshop websites,
     please work in <https://github.com/carpentries/workshop-template>.
     The home page of that repository explains how to set up workshop websites,
     while the extra pages in <https://carpentries.github.io/workshop-template>
     provide more background on our design choices.
 
-4.  If you wish to change CSS style files, tools,
+4.  If you wish to change DUNE CSS style files, tools,
     or HTML boilerplate for lessons or workshops stored in `_includes` or `_layouts`,
-    please work in <https://github.com/carpentries/styles>.
+    please work in <https://github.com/dune/lesson-template>.
 
 ## What to Contribute
 
