@@ -42,7 +42,7 @@ Then follow the instructions [https://carpentries.github.io/lesson-example/setup
 > This is like a GitHub Fork, but is not connected to the upstream changes.
 {: .callout}
 
-- Put the URL of this repository, that is https://github.com/DUNE/lesson-template.git in the “Your old repository’s clone URL” box. 
+- Put the URL of this repository, that is `https://github.com/DUNE/lesson-template.git` in the `The URL for your source repository*` URL box. 
 
 - Select the owner for your new repository (you). 
 
@@ -66,7 +66,7 @@ git clone -b gh-pages <your new repository>
 
 You need to look at the following pages.
 
-- `_config.yml ` to set the title and other parameters for the lesson
+- `_config.yml` to set the title and other parameters for the lesson
 - `AUTHORS` to tell people who is doing this
 - `CITATION` how to cite the page - often just the URL
 - `LICENSE`  you can keep it as is
@@ -167,7 +167,7 @@ git push
 ~~~
 {: .language-bash}
 
-Wait a couple of minutes and you shouild see your page appear at:
+Wait a couple of minutes and you should see your page appear at:
 
 `https://<yourname>.github.io/<yoursite>`
 
@@ -180,21 +180,21 @@ Ok, once you have your site in decent shape you can import it back to
 
 Once you have it checked out you can use the import function to make an official dune site.
 
-- Use the [GitHub’s importer](https://github.com/new/import) to make a copy of this repo in your own GitHub account. (Note: This is like a GitHub Fork, but not connected to the upstream changes)
+- Use [GitHub’s importer](https://github.com/new/import) to make a copy of this repo in your own GitHub account. (Note: This is like a GitHub Fork, but not connected to the upstream changes)
 
-- Put the URL of this repository, that is `https://github.com/<yourname/<yoursite>.git` in the “Your old repository’s clone URL” box. 
+- Put the URL of this repository, that is `https://github.com/<yourname/<yoursite>.git` in the `The URL for your source repository*` URL box.
 
-- Select the owner for your new repository `DUNE`
+- Select the owner for your new repository: `DUNE`
 
-- Set the name you chose for your lesson repository `<yoursite>`
+- Set the name you chose for your lesson repository: `<yoursite>`
 
 - Make sure the repository is public.
 
 ### Maintaining your site
 
-- try to make changes on your local copy - others can also do things in their local copies
+- Try to make changes on your local copy - others can also do things in their local copies
 
-- use pull requests to merge changes into the official DUNE site where possible
+- Use pull requests to merge changes into the official DUNE site where possible
 
-- you can make minor patches directly on the main site but generally, it's better to work locally. 
+- You can make minor patches directly on the main site but generally, it's better to work locally. 
 
