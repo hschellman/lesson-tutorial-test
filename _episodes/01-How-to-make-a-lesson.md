@@ -7,7 +7,8 @@ questions:
 objectives:
 - Learn how to set up locally to build a lesson and to deploy it.
 keypoints:
-- If you can do basic markdown, you can do this. 
+- If you can do basic markdown, you can do this.
+- Import the template to your own GitHub account when developing new lessons
 ---
 
 
