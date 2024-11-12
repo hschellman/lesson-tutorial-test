@@ -15,13 +15,13 @@ keypoints:
 
 
 
-> #### Note:  
-> Check out the [previous episode]({{ site.baseurl }}/00-Local-Setup-For-Local-Build.html)to set up a local server and to do local builds. 
+> ## Note
+> Check out the [previous episode]({{ site.baseurl }}/00-Local-Setup-For-Local-Build.html) to set up a local server and to do local builds. 
 {: .callout}
 
 ## First you need to decide on a name for your new lesson. 
 
-> #### Note: 
+> ## Note
 > Because github insists on using gh_pages for deployment, it is good to use your own github account for initial (and ongoing) development and pull over to /DUNE/ for the official version rather than using branches in the /DUNE/ github area.
 {: .callout}
 
@@ -29,13 +29,17 @@ keypoints:
 
 Then follow the instructions [https://carpentries.github.io/lesson-example/setup.html#setup-for-local-rendering-of-the-lessons-optional](https://carpentries.github.io/lesson-example/setup.html#setup-for-local-rendering-of-the-lessons-optional) for setup on your local machine - in principle this is optional but in practice it is really helpful.  You are going to need ruby and pyYAML.  I used conda on a mac but they have instructions for Windows, Mac and UNIX. 
 
-> #### Alert!!! 
+> ## Alert
 > At this point you should stop following their instructions and start using our template to avoid overwriting DUNE specific items. 
-{: .callout}
+{: .caution}
 
 ## Then import this template. 
 
-- Use the [GitHub’s importer](https://github.com/new/import) to make a copy of this repo in your own GitHub account. (Note: This is like a GitHub Fork, but not connected to the upstream changes)
+- Use [GitHub’s importer](https://github.com/new/import) to make a copy of this repo in your own GitHub account.
+
+> ## GitHub Import
+> This is like a GitHub Fork, but is not connected to the upstream changes.
+{: .callout}
 
 - Put the URL of this repository, that is https://github.com/DUNE/lesson-template.git in the “Your old repository’s clone URL” box. 
 
@@ -45,7 +49,7 @@ Then follow the instructions [https://carpentries.github.io/lesson-example/setup
 
 - Make sure the repository is public.
 
-> #### Note: 
+> ## Import to your GitHub account
 > Please import to your own account and new lesson, work there and then move it over to `/DUNE/` once you have a decent draft in place. 
 {: .callout}
 
@@ -136,7 +140,7 @@ will launch a web server and a site at: `http://127.0.0.1:4000`
 
 You may need to reload the web site to see your changes. 
 
-> ### Note: 
+> ## Note 
 > These will hang around until you kill them so if you try to launch twice you can't. Look for processes with:
 {: .callout}
 
