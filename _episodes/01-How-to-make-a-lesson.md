@@ -147,9 +147,18 @@ You may need to reload the web site to see your changes.
 
 
 ~~~
-ps -ef | grep jekyll
+ps -ef | grep 'jekyll serve'
 ~~~
 {: .language-bash}
+You can identify the process number from the second column that is printed and kill that process.
+Alternatively this can be achieved with a one line command:
+~~~
+ps -ef | grep '[j]ekyll serve' | awk '{print $2}'
+~~~
+{: .language-bash}
+The `awk` command grabs the second column, the PID. The `[j]` is a trick to stop it from also passing the `grep` process to kill also.
+
+
 
 ### Publishing your draft site to `<yourname>.github.io/<yoursite>`
 
