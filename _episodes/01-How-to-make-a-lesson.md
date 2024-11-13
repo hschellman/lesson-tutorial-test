@@ -156,6 +156,7 @@ We have provided a `gitadd.sh` script that adds the most common **source** files
 # make certain you're up to date with the main repo
 git pull
 # make certain you are in your gh-pages branch
+git status | grep gh-pages 
 source gitadd.sh
 git commit -m " I DID SOMETHING"
 git push
