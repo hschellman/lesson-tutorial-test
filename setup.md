@@ -1,7 +1,7 @@
 ---
 title: Mission Setup
-teaching: 60
-exercises: 20
+teaching: 1
+exercises: 1
 questions:
 - How do I prepare for the DUNE computing tutorial?
 objectives:  
@@ -32,6 +32,9 @@ You must be on the DUNE Collaboration member list and have a valid FNAL or CERN 
 You should join the DUNE Slack instance and look in #computing-training-basics (see Mission Setup below)  for help with this tutorial
 
 Windows users are invited to review the [Windows Setup page]({{ site.baseurl }}/Windows.html).
+
+
+#  If you are already set up to run DUNE code you can skip all of this. It is a placeholder for other tutorials. 
 
 ## Step 1: DUNE membership
 
